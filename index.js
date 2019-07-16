@@ -2,7 +2,7 @@ const toCaps = string => {
   return string[0].toUpperCase() + string.slice(1, string.length)
 }
 
-String.prototype.capatlize = function() {
+String.prototype.capitalize = function() {
   return this[0].toUpperCase() + this.slice(1, this.length)
 }
 
@@ -17,7 +17,7 @@ const sentenceCaps = string => {
     .join(" ")
 }
 
-String.prototype.capatlizeSentence = function() {
+String.prototype.capitalizeSentence = function() {
   return this.split(" ")
     .map(word => toCaps(word))
     .join(" ")

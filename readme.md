@@ -6,7 +6,7 @@ A library of basic string functions
 
 ### Functions
 
-- **String.prototype.capatlize())**  
+- **String.prototype.capitalize())**  
   Capatlizes the first character of the string and returns it.
   ```js
   "this is a string".capatlize() //Output: "This is a string"
@@ -16,7 +16,7 @@ A library of basic string functions
   ```js
   "This is a String".lower() //Output: "this is a String"
   ```
-- **String.prototype.capatlizeSentence())**  
+- **String.prototype.capitalizeSentence())**  
   Capatlizes each word in the string and returns it
   ```js
   "this is a string".capatlizeSentence() //Output: "This Is A String"
