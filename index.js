@@ -1,28 +1,12 @@
-const toCaps = string => string[0].toUpperCase() + string.slice(1, string.length);
-
-String.prototype.capitalize = function () {
-  return this[0].toUpperCase() + this.slice(1, this.length);
-};
-
 String.prototype.lower = function () {
   return this[0].toLowerCase() + this.slice(1, this.length);
 };
 
-const sentenceCaps = string => string
-  .split(' ')
-  .map(word => toCaps(word))
-  .join(' ');
-
 String.prototype.capitalizeSentence = function () {
   return this.split(' ')
-    .map(word => toCaps(word))
+    .map(word => word[0].toUpperCase() + word.slice(1, word.length))
     .join(' ');
 };
-
-const everyOtherCaps = string => string
-  .split('')
-  .map((letter, i) => (i % 2 === 0 ? letter.toUpperCase() : letter))
-  .join('');
 
 String.prototype.evenCaps = function () {
   return this.split('')
@@ -36,22 +20,11 @@ String.prototype.oddCaps = function () {
     .join('');
 };
 
-const removeWhitespace = string => string
-  .split('')
-  .map(letter => (letter === ' ' ? '' : letter))
-  .join('');
-
 String.prototype.removeWhitespace = function () {
   return this.split('')
     .map(letter => (letter === ' ' ? '' : letter))
     .join('');
 };
-
-const removeExtraWhitespace = string => string
-  .split('')
-  .map((letter, i) => (string[i + 1] === ' ' && letter === ' ' ? '' : letter))
-  .join('')
-  .trim();
 
 String.prototype.removeExtraWhitespace = function () {
   return this.split('')
