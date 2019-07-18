@@ -70,7 +70,7 @@ String.prototype.removeExtraWhitespace = function() {
     .trim()
 }
 
-String.prototype.kabobCase = function() {
+String.prototype.kebabCase = function() {
   return this.removeExtraWhitespace()
     .split(" ")
     .join("-")
@@ -86,10 +86,9 @@ String.prototype.snakeCase = function() {
 
 String.prototype.camelCase = function() {
   return this.removeExtraWhitespace()
-    .capatlizeSentence()
+    .toLowerCase()
+    .capitalizeSentence()
     .split(" ")
     .join("")
     .lower()
 }
-
-console.log("this is a string".oddCaps())
