@@ -4,6 +4,7 @@
   "description": "---",
   "main": "index.js",
   "scripts": {
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/spglancy/strLib/issues"
   },
-  "homepage": "https://github.com/spglancy/strLib#readme"
+  "homepage": "https://github.com/spglancy/strLib#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
 }
