@@ -4,6 +4,8 @@
 ![Coveralls github](https://img.shields.io/coveralls/github/spglancy/strLib.svg)
 ![Travis (.com)](https://img.shields.io/travis/com/spglancy/strLib.svg)
 ![npm](https://img.shields.io/npm/v/sariel_str_functions_lib.svg)
+![npm bundle size](https://img.shields.io/bundlephobia/min/sariel_str_functions_lib.svg)
+![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/sariel_str_functions_lib.svg)
 
 ---
 
