@@ -1,5 +1,10 @@
 # String Library
 
+[![Build Status](https://travis-ci.com/spglancy/strLib.svg?branch=master)](https://travis-ci.com/spglancy/strLib)
+![Coveralls github](https://img.shields.io/coveralls/github/spglancy/strLib.svg)
+![Travis (.com)](https://img.shields.io/travis/com/spglancy/strLib.svg)
+![npm](https://img.shields.io/npm/v/sariel_str_functions_lib.svg)
+
 ---
 
 A library of basic string functions
