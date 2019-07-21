@@ -16,7 +16,7 @@ A library of basic string functions
 - **String.prototype.capitalize())**  
   Capitalizes the first character of the string and returns it.
   ```js
-  "this is a string".capatlize() //Output: "This is a string"
+  "this is a string".capitalize() //Output: "This is a string"
   ```
 - **String.prototype.lower())**  
   Makes the first character of the string lowercase and returns it.
