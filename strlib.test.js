@@ -62,4 +62,5 @@ test('asciiShift', () => {
   expect('abcdefg'.asciiShift(1)).toBe('bcdefgh');
   expect('bcdefgh'.asciiShift(-1)).toBe('abcdefg');
   expect('12345'.asciiShift(1)).toBe('23456');
+  expect('1a2b3c4d5e'.asciiShift(1)).toBe('2b3c4d5e6f');
 });
