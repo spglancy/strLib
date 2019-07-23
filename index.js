@@ -55,3 +55,14 @@ String.prototype.camelCase = function () {
     .join('')
     .lower();
 };
+
+String.prototype.asciiShift = function (val) {
+  output = [];
+  for (i = 0; i < this.length; i++) {
+    char = this.charCodeAt(i);
+    if (char < 122) {
+      output.push(String.fromCharCode(char + val));
+    }
+  }
+  return output.join('');
+};

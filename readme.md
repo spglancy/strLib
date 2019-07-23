@@ -26,7 +26,7 @@ A library of basic string functions
 - **String.prototype.capitalizeSentence())**  
   Capitalizes each word in the string and returns it
   ```js
-  "this is a string".capatlizeSentence() //Output: "This Is A String"
+  "this is a string".capitalizeSentence() //Output: "This Is A String"
   ```
 - **String.prototype.evenCaps())**  
   Capitalizes every other letter(even) in the string and returns it
@@ -65,3 +65,9 @@ A library of basic string functions
   ```js
   "this is a string".camelCase() //Output: "ThisIsAString"
   ```
+- **String.prototype.asciiShift(val)**  
+  shifts ascii value of all characters by a specified value
+
+```js
+"abcdef123".shift(1) //Output: "bcdefg234"
+```

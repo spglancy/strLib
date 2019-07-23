@@ -57,3 +57,9 @@ test('camelcase', () => {
   expect('camel journey'.camelCase()).toBe('camelJourney');
   expect('a'.camelCase()).toBe('a');
 });
+
+test('shift', () => {
+  expect('abcdefg'.asciiShift(1)).toBe('bcdefgh');
+  expect('bcdefgh'.asciiShift(-1)).toBe('abcdefg');
+  expect('12345'.asciiShift(1)).toBe('23456');
+});
