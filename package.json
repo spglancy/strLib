@@ -2,8 +2,14 @@
   "name": "sariel_str_functions_lib",
   "version": "1.6.0",
   "description": "---",
-  "main": "index.js",
+  "main": "umd/strLibModule.js",
+  "module": "esm/strLibModule.js",
+  "files": [
+    "esm/*",
+    "emd/*"
+  ],
   "scripts": {
+    "prepare": "rollup --config",
     "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
@@ -22,6 +28,8 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "rollup": "^1.17.0",
+    "rollup-plugin-terser": "^5.1.1"
   }
 }

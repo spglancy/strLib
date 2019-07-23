@@ -58,7 +58,7 @@ test('camelcase', () => {
   expect('a'.camelCase()).toBe('a');
 });
 
-test('shift', () => {
+test('asciiShift', () => {
   expect('abcdefg'.asciiShift(1)).toBe('bcdefgh');
   expect('bcdefgh'.asciiShift(-1)).toBe('abcdefg');
   expect('12345'.asciiShift(1)).toBe('23456');

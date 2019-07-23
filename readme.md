@@ -69,5 +69,5 @@ A library of basic string functions
   shifts ascii value of all characters by a specified value
 
 ```js
-"abcdef123".shift(1) //Output: "bcdefg234"
+"abcdef123".asciiShift(1) //Output: "bcdefg234"
 ```
